@@ -20,7 +20,7 @@ module.exports = function (_config) {
   const IS_DEV = !IS_TESTFLIGHT || !IS_PRODUCTION
 
   const ASSOCIATED_DOMAINS = [
-    'applinks:deer.social',
+    'applinks:gsheps.social',
     // When testing local services, enter an ngrok (et al) domain here. It must use a standard HTTP/HTTPS port.
     ...(IS_DEV || IS_TESTFLIGHT ? [] : []),
   ]
@@ -37,20 +37,20 @@ module.exports = function (_config) {
   return {
     expo: {
       version: VERSION,
-      name: 'deer.social',
-      slug: 'deer',
-      scheme: ['bluesky', 'deer'],
-      // owner: 'blueskysocial',
+      name: 'gsheps.social',
+      slug: 'gsheps',
+      scheme: ['bluesky', 'gsheps'],
+      owner: 'gsheps.net',
       // owner: 'neema.brown',
       runtimeVersion: {
         policy: 'appVersion',
       },
       icon: './assets/app-icons/ios_icon_default_light.png',
       userInterfaceStyle: 'automatic',
-      primaryColor: '#4b9b6c',
+      primaryColor: '#33416a',
       ios: {
         supportsTablet: false,
-        bundleIdentifier: 'social.deer',
+        bundleIdentifier: 'gsheps.social',
         config: {
           usesNonExemptEncryption: false,
         },
@@ -64,7 +64,7 @@ module.exports = function (_config) {
             'Used to save images to your library.',
           NSPhotoLibraryUsageDescription:
             'Used for profile pictures, posts, and other kinds of content',
-          CFBundleSpokenName: 'deer.social',
+          CFBundleSpokenName: 'gsheps.social',
           CFBundleLocalizations: [
             'en',
             'an',
@@ -151,10 +151,10 @@ module.exports = function (_config) {
           foregroundImage: './assets/icon-android-foreground.png',
           monochromeImage: './assets/icon-android-foreground.png',
           backgroundImage: './assets/icon-android-background.png',
-          backgroundColor: '#4b9b6c',
+          backgroundColor: '#33416a',
         },
         googleServicesFile: './google-services.json',
-        package: 'social.deer',
+        package: 'gsheps.social',
         intentFilters: [
           {
             action: 'VIEW',
@@ -162,7 +162,7 @@ module.exports = function (_config) {
             data: [
               {
                 scheme: 'https',
-                host: 'deer.social',
+                host: 'gsheps.social',
               },
               {
                 scheme: 'https',
@@ -226,7 +226,7 @@ module.exports = function (_config) {
           'expo-notifications',
           {
             icon: './assets/icon-android-notification.png',
-            color: '#4b9b6c',
+            color: '#33416a',
             sounds: PLATFORM === 'ios' ? ['assets/dm.aiff'] : ['assets/dm.mp3'],
           },
         ],
@@ -280,7 +280,7 @@ module.exports = function (_config) {
               },
             },
             android: {
-              backgroundColor: '#4b9b6c',
+              backgroundColor: '#33416a',
               image: './assets/splash-android-icon.png',
               imageWidth: 150,
               dark: {
@@ -363,10 +363,10 @@ module.exports = function (_config) {
           'react-native-vision-camera',
           {
             enableLocation: false,
-            cameraPermissionText: 'deer.social needs access to your camera.',
+            cameraPermissionText: 'gsheps.social needs access to your camera.',
             enableMicrophonePermission: true,
             microphonePermissionText:
-              'deer.social needs access to your microphone.',
+              'gsheps.social needs access to your microphone.',
           },
         ],
       ].filter(Boolean),
