@@ -69,10 +69,10 @@ export const gradients = {
   },
   sky: {
     values: [
-      [0, '#344e41'],
-      [1, '#a3b18a'],
+      [0, '#33416a'],
+      [1, '#404a69'],
     ],
-    hover_value: '#344e41',
+    hover_value: '#33416a',
   },
   midnight: {
     values: [
