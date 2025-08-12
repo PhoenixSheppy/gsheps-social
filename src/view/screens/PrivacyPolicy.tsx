@@ -39,8 +39,8 @@ export const PrivacyPolicyScreen = (_props: Props) => {
               The Privacy Policy has been moved to{' '}
               <TextLink
                 style={pal.link}
-                href="https://gsheps.social/about/privacy"
-                text="gsheps.social/about/privacy"
+                href="https://bsky.gsheps.social/about/privacy"
+                text="bsky.gsheps.social/about/privacy"
               />
             </Trans>
           </Text>

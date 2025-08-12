@@ -106,13 +106,13 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
           </>
         )}
         <InlineLinkText
-          to="https://gsheps.social/about/privacy"
+          to="https://bsky.gsheps.social/about/privacy"
           label={_(msg`Privacy`)}>
           {_(msg`Privacy`)}
         </InlineLinkText>
         {' • '}
         <InlineLinkText
-          to="https://gsheps.social/about/tos"
+          to="https://bsky.gsheps.social/about/tos"
           label={_(msg`Terms`)}>
           {_(msg`Terms`)}
         </InlineLinkText>
