@@ -1,4 +1,5 @@
-# gsheps.social (bluesky)
+# ARCHIVED IN FAVOR OF UPDATED FORK, SEE NEW REPO: [gsheps-social-new](https://github.com/PhoenixSheppy/gsheps-social-new)
+## gsheps.social (bluesky)
 
 This is a soft fork of [social app](https://github.com/bluesky-social/social-app).
 
